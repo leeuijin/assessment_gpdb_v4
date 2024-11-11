@@ -1,5 +1,5 @@
 #[공통 변경 사항]
-- source /usr/local/greenplum-db/greenplum_path.sh 주석  
+source /usr/local/greenplum-db/greenplum_path.sh 주석  
 
 #1. 1_diag_os.sh CTTTM4 install 가이드 문서의 OS 설정값들을 확인
 
