@@ -1,0 +1,4 @@
+ schema_name | table_name | skew_percentage | min_mb | avg_mb | max_mb | tot_mb 
+-------------+------------+-----------------+--------+--------+--------+--------
+(0 rows)
+

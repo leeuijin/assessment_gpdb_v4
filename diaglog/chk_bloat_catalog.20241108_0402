@@ -1,0 +1,12 @@
+ schemaname |   tablename    | actual_pages | expected_pages | actual_size_mb | expected_size_mb 
+------------+----------------+--------------+----------------+----------------+------------------
+ pg_catalog | pg_type        |            2 |              4 |              0 |                0
+ pg_catalog | pg_rewrite     |           13 |             13 |              2 |                2
+ pg_catalog | pg_proc        |           16 |             15 |              2 |                2
+ pg_catalog | pg_operator    |            4 |              4 |              0 |                0
+ pg_catalog | pg_description |            5 |              5 |              0 |                0
+ pg_catalog | pg_depend      |           11 |              9 |              1 |                1
+ pg_catalog | pg_class       |            3 |              4 |              0 |                0
+ pg_catalog | pg_attribute   |           11 |             11 |              2 |                2
+(8 rows)
+

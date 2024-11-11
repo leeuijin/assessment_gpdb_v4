@@ -1,0 +1,5 @@
+ schemaname | tablename | actual_pages | expected_pages | actual_size_mb | expected_size_mb 
+------------+-----------+--------------+----------------+----------------+------------------
+ public     | sum_test  |           36 |             32 |              1 |                1
+(1 row)
+

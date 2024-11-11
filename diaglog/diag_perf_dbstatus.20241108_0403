@@ -1,0 +1,54 @@
+
+####################
+### 1. GPDB DATABASE LIST & SIZE
+####################
+
+####################
+### 2. TABLE LIST 
+####################
+ schemaname |  tablename   | tableowner | tablespace | hasindexes | hasrules | hastriggers 
+------------+--------------+------------+------------+------------+----------+-------------
+ public     | ext_db_files | gpadmin    |            | f          | f        | f
+ public     | sum_test     | gpadmin    |            | f          | f        | f
+(2 rows)
+
+
+ nspname |     relname      | relkind | relstorage 
+---------+------------------+---------+------------
+ public  | r_typename       | c       | v
+ public  | plr_environ_type | c       | v
+ public  | r_version_type   | c       | v
+ public  | sum_test         | r       | h
+ public  | ext_db_files     | r       | x
+ public  | v_chk_file_skew  | v       | v
+(6 rows)
+
+
+####################
+### 3. SIZE per SCHEMA 
+####################
+ schemaname | schema_size_mb 
+------------+----------------
+ public     |              1
+(1 row)
+
+
+####################
+### 8. DISK USAGE Percents by One Hour
+####################
+
+####################
+### 9. Frequency SQL (Top 50)  
+####################
+
+####################
+### 10. Running Timed SQL (Top 100)  
+####################
+
+####################
+### 11. Need for Table Analyze 
+####################
+ relname 
+---------
+(0 rows)
+

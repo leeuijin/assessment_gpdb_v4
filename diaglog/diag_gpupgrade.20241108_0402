@@ -1,0 +1,103 @@
+
+####################
+### 1. GPDB version
+####################
+gpstate version 4.3.29.0 build 1
+
+####################
+### 2. GPCC version
+####################
+Pivotal Greenplum Command Center version 3.3.3
+
+####################
+### 3. GPHDFS version
+####################
+Please check the PXF version manually
+
+####################
+### 4. gppkg list
+####################
+20241108:04:02:31:114285 gppkg:mdw:gpadmin-[INFO]:-Starting gppkg with args: -q --all
+madlib-1.15
+pljava-1.3.1
+plr-2.3.1
+
+####################
+### 5. Mirror config check
+####################
+ dbid | content | role | preferred_role | mode | status | port  | hostname | address | replication_port | san_mounts 
+------+---------+------+----------------+------+--------+-------+----------+---------+------------------+------------
+    1 |      -1 | p    | p              | s    | u      |  5432 | mdw      | mdw     |                  | 
+    2 |       0 | p    | p              | s    | u      | 20000 | sdw1     | sdw1    |                  | 
+    3 |       1 | p    | p              | s    | u      | 20001 | sdw1     | sdw1    |                  | 
+    4 |       2 | p    | p              | s    | u      | 20000 | sdw2     | sdw2    |                  | 
+    5 |       3 | p    | p              | s    | u      | 20001 | sdw2     | sdw2    |                  | 
+(5 rows)
+
+
+####################
+### 6. Install directory check
+####################
+[sdw2] 합계 24
+[sdw2] drwxrwxrwx. 17 root    root    4096 11월  4 09:05 .
+[sdw2] drwxr-xr-x. 13 root    root    4096  3월  8  2023 ..
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 bin
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 etc
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 games
+[sdw2] lrwxrwxrwx.  1 root    root      28  3월  8  2023 gppython -> /usr/local/gppython-4.2.2.0/
+[sdw2] drwxr-xr-x.  5 root    root      60 12월 24  2017 gppython-4.2.2.0
+[sdw2] lrwxrwxrwx   1 gpadmin gpadmin   29  3월  8  2023 greenplum-cc -> /usr/local/greenplum-cc-6.8.3
+[sdw2] drwxrwxr-x  12 gpadmin gpadmin 4096  3월 14  2023 greenplum-cc-6.8.3
+[sdw2] lrwxrwxrwx   1 gpadmin gpadmin   32 11월  4 09:05 greenplum-db -> /usr/local/greenplum-db-4.3.29.0
+[sdw2] drwxr-xr-x  14 gpadmin gpadmin 4096 11월  4 02:17 greenplum-db-4.3.29.0
+[sdw2] drwxr-xr-x.  6 gpadmin gpadmin 4096 11월  4 08:13 greenplum-db-6.23.3
+[sdw2] drwxr-xr-x  11 gpadmin gpadmin 4096 11월  4 10:02 greenplum-db-6.27.2
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 include
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib64
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 libexec
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 sbin
+[sdw2] drwxr-xr-x.  5 root    root      46  3월  8  2023 share
+[sdw2] drwxr-xr-x.  2 root    root       6  6월  9  2014 src
+[sdw1] 합계 24
+[sdw1] drwxrwxrwx. 17 root    root    4096 11월  4 09:05 .
+[sdw1] drwxr-xr-x. 13 root    root    4096  3월  8  2023 ..
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 bin
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 etc
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 games
+[sdw1] lrwxrwxrwx.  1 root    root      28  3월  8  2023 gppython -> /usr/local/gppython-4.2.2.0/
+[sdw1] drwxr-xr-x.  5 root    root      60 12월 24  2017 gppython-4.2.2.0
+[sdw1] lrwxrwxrwx   1 gpadmin gpadmin   29  3월  8  2023 greenplum-cc -> /usr/local/greenplum-cc-6.8.3
+[sdw1] drwxrwxr-x  12 gpadmin gpadmin 4096  3월 14  2023 greenplum-cc-6.8.3
+[sdw1] lrwxrwxrwx   1 gpadmin gpadmin   32 11월  4 09:05 greenplum-db -> /usr/local/greenplum-db-4.3.29.0
+[sdw1] drwxr-xr-x  14 gpadmin gpadmin 4096 11월  4 02:17 greenplum-db-4.3.29.0
+[sdw1] drwxr-xr-x.  6 gpadmin gpadmin 4096 11월  4 08:12 greenplum-db-6.23.3
+[sdw1] drwxr-xr-x  11 gpadmin gpadmin 4096 11월  4 10:02 greenplum-db-6.27.2
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 include
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib64
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 libexec
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 sbin
+[sdw1] drwxr-xr-x.  5 root    root      46  3월  8  2023 share
+[sdw1] drwxr-xr-x.  2 root    root       6  6월  9  2014 src
+[ mdw] 합계 24
+[ mdw] drwxrwxrwx. 18 root    root    4096 11월  7 01:45 .
+[ mdw] drwxr-xr-x. 13 root    root    4096  3월  8  2023 ..
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 bin
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 etc
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 games
+[ mdw] lrwxrwxrwx.  1 root    root      28  3월  8  2023 gppython -> /usr/local/gppython-4.2.2.0/
+[ mdw] drwxr-xr-x.  5 root    root      60 12월 24  2017 gppython-4.2.2.0
+[ mdw] drwxrwxr-x  12 gpadmin gpadmin 4096  3월 14  2023 greenplum-cc-6.8.3
+[ mdw] lrwxrwxrwx   1 gpadmin gpadmin   22 11월  4 07:08 greenplum-cc-web -> greenplum-cc-web-3.3.3
+[ mdw] drwxrwxr-x   7 gpadmin gpadmin  147 11월  4 02:34 greenplum-cc-web-3.3.3
+[ mdw] drwxr-xr-x  14 gpadmin gpadmin 4096 11월  7 01:39 greenplum-db-4.3.29.0
+[ mdw] drwxr-xr-x.  6 gpadmin gpadmin 4096 11월  7 00:07 greenplum-db-6.23.3
+[ mdw] drwxr-xr-x  11 gpadmin gpadmin 4096 11월  7 01:57 greenplum-db-6.27.2
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 include
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 lib64
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 libexec
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 sbin
+[ mdw] drwxr-xr-x.  5 root    root      46  3월  8  2023 share
+[ mdw] drwxr-xr-x.  2 root    root       6  6월  9  2014 src
