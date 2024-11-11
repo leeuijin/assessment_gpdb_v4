@@ -28,7 +28,6 @@
 source /usr/local/greenplum-db/greenplum_path.sh 주석  
 
 1. 1_diag_os.sh CTTTM4 install 가이드 문서의 OS 설정값들을 확인하는 스크립트 추가
-
     <code>
           echo "" >> ${LOGFILE}
           echo "####################" >> ${LOGFILE}
@@ -64,7 +63,6 @@ source /usr/local/greenplum-db/greenplum_path.sh 주석
         echo "" >> ${LOGFILE}
         gpssh -f ${HOSTFILE} 'date' >> ${LOGFILE}
     </code>
-
 2. 2_diag_gpdb.sh
     <code>
     아래 파라미터는 v6 파라미터 이므로 해당 내용 주석처리
